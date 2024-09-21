@@ -1,0 +1,255 @@
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.4s;
+  /* text-transform: capitalize; */
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1335px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.small_device{
+  display: none;
+}
+
+/* ----------------------------- */
+.w1-2 {
+  width: 50%;
+}
+.w-full {
+  width: 100%;
+}
+/* ----------------------------- */
+.py-145 {
+  padding: 145px 0;
+}
+.py-20 {
+  padding: 20px 0;
+}
+/* ----------------------------- */
+.text-primary {
+  color: #ffc178;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-black {
+  color: #000000;
+}
+.hover-text-black:hover {
+  color: #000000;
+}
+.text-end {
+    text-align: center;
+}
+.text-center {
+    text-align: end;
+}
+/* ----------------------------- */
+.text-96 {
+  font-size: 96px;
+}
+.text-88 {
+  font-size: 88px;
+}
+.text-64 {
+  font-size: 64px;
+}
+.text-36 {
+  font-size: 36px;
+}
+.text-20 {
+  font-size: 20px;
+}
+.text-22 {
+  font-size: 22px;
+}
+.text-18 {
+  font-size: 18px;
+}
+.text-14 {
+  font-size: 14px;
+}
+/* ----------------------------- */
+.font-bold {
+  font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-sans {
+  font-family: system-ui,
+   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ----------------------------- */
+.leading-100 {
+  line-height: 100px;
+}
+.leading-32 {
+  line-height: 32px;
+}
+/* ----------------------------- */
+.bg-primary {
+  background: #ffc178;
+}
+.bg-black {
+  background: #000000;
+}
+/* ------------------------------ */
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: end;
+}
+.item-center {
+  align-items: center;
+}
+/* ------------------------------ */
+.gap-y-10 {
+  gap: 10px 0px;
+}
+.gap-y-13 {
+  gap: 13px 0px;
+}
+.gap-x-18 {
+  gap: 0px 18px;
+}
+.gap-y-19 {
+  gap: 19px 0px;
+}
+.gap-y-30 {
+  gap: 30px 0px;
+}
+.gap-x-45 {
+  gap: 0px 45px;
+}
+.gap-x-60 {
+  gap: 0px 60px;
+}
+.gap-y-60 {
+  gap: 60px 0px;
+}
+.gap-y-200 {
+  gap: 200px 0px;
+}
+/* ------------------------------ */
+.bg-head {
+  background-image: url(images/Rectangle\ 1\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-bromo {
+  background-image: url(images/bromo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-culture {
+  background-image: url(images/culture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-holiday {
+  background-image: url(images/holiday.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* -----------banner start------------------- */
+.banner {
+  padding: 401px 0;
+}
+/* -----------banner end------------------- */
+/* -----------holiday start------------------- */
+
+.holiday_left {
+  width: 624px;
+  height: 799px;
+}
+.holiday_right {
+  width: 587px;
+  padding: 70px 0;
+  gap: 60px 0px;
+}
+/* -----------holiday end------------------- */
+/* -----------bromo start------------------- */
+.bromo_container_text {
+  max-width:932px;
+  padding: 296px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+/* -----------bromo end------------------- */
+/* -----------culture start------------------- */
+.culture_right {
+  width: 624px;
+  height: 799px;
+}
+.culture_left {
+  width: 587px;
+  padding: 70px 0;
+  gap: 60px 0px;
+}
+/* -----------culture end------------------- */
+/* -----------footer start------------------- */
+
+footer{
+    width: 100%;
+}
+
+.footer_container_left {
+  width: 405px;
+}
+.footer_btn {
+  padding: 18px 67px;
+  border-radius: 16px;
+}
+/* -----------footer end------------------- */
+@media (min-width: 640px) and (max-width: 767.99px) {
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+}
+@media (min-width: 1024px) and (max-width: 1279.99px) {
+}
+@media (min-width: 1280px) and (max-width: 1535.99px) {
+}

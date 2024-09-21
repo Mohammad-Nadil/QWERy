@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome -->
+  </head>
+  <body>
+    <section id="top" class="bg-head py-20">
+      <div class="container top_contain">
+        <nav class="flex justify-between item-center">
+          <div class="top_img">
+            <img src="images/logo.png" alt="images/logo.png" />
+          </div>
+          <ul id="nav_menu" class=" nav_ul flex gap-x-60">
+            <li>
+              <a href="" class="text-18 text-black font-sans font-semibold"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#holiday"
+                class="text-18 text-white hover-text-black font-sans font-semibold"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#bromo"
+                class="text-18 text-white hover-text-black font-sans font-semibold"
+                >Information</a
+              >
+            </li>
+            <li>
+              <a
+                href="#culture"
+                class="text-18 text-white hover-text-black font-sans font-semibold"
+                >Culture</a
+              >
+            </li>
+            <li>
+              <a
+                href="#footer"
+                class="text-18 text-white hover-text-black font-sans font-semibold"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <button class="small_device"  onclick="collapse('nav_menu', 'visible', 'invisible')">
+            <i class="fa-solid fa-bars small_device_icon"></i>
+          </button>
+        </nav>
+        <div class="banner">
+          <p class="banner_p font-sans font-bold text-18 text-primary ">
+            explore the Nature Beauty
+          </p>
+          <div>
+            <h2 class=" banner_head font-sans font-bold text-96 text-white leading-100">
+              Discover
+            </h2>
+            <p class=" banner_head_p font-sans text-88 text-white leading-100">
+              Wonderful Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="holiday" class="holiday py-145 bg-black">
+      <div class="container flex gap-x-45 ">
+        <div class="holiday_left bg-holiday">
+          <img class="holiday_left_img" src="" alt="" />
+        </div>
+        <div class="holiday_right flex flex-col">
+          <p class=" holiday_title font-bold text-18 text-primary">EAST nUSA TENGGARA</p>
+          <h2 class=" holiday_heading font-sans font-bold text-64 text-white">
+            Have you enjoyed your holiday?
+          </h2>
+          <p class=" holiday_detail font-semibold font-sans text-white leading-32">
+            You will be amazed if you take part in this sailing Komodo island
+            tour package. So it is also mandatory for you, besides enjoying
+            Komodo tourism on Komodo Island, you also have to taste the marine
+            tourism. The beautiful waters of Komodo will make you meet many
+            travelers from other countries.
+          </p>
+          <a
+            href="#"
+            class=" holiday_a font-sans font-bold text-18 text-primary"
+            style="padding-top: 49px"
+            >READ MORE</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="bromo" class="bromo py-145 bg-black">
+      <div class="container bg-bromo">
+        <div class="bromo_container_text">
+          <p class=" bromo_title font-sans font-bold text-18 text-primary">Bromo</p>
+          <h2 class="bromo_heading font-sans font-bold text-64 text-white">
+            Steady your steps, we will climb together!
+          </h2>
+          <p class=" bromo_detail font-sans text-14 leading-32 text-white">
+            Enjoying the vast expanse of the sea of ​​​​sand, witnessing the
+            splendor of Mount Semeru that soars into the sky, and gazing at the
+            beauty of the sun moving out of its bed or otherwise enjoying the
+            dim twilight from the Bromo ridge is an unforgettable experience
+            when visiting Bromo.
+          </p>
+          <a href="#" class=" bromo_a font-sans font-bold text-18 text-primary"
+            >READ MORE</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="culture" class="culture py-145 bg-black">
+      <div class="container flex gap-x-45 justify-between">
+        <div class="culture_left flex flex-col">
+          <p class="font-bold text-18 text-primary">EAST nUSA TENGGARA</p>
+          <h2 class="font-sans font-bold text-64 text-white">
+            Have you enjoyed your holiday?
+          </h2>
+          <p class="culture_detail font-semibold font-sans text-white leading-32">
+            You will be amazed if you take part in this sailing Komodo island
+            tour package. So it is also mandatory for you, besides enjoying
+            Komodo tourism on Komodo Island, you also have to taste the marine
+            tourism. The beautiful waters of Komodo will make you meet many
+            travelers from other countries.
+          </p>
+          <a
+            href="#"
+            class=" culture_a font-sans font-bold text-18 text-primary"
+            style="padding-top: 49px"
+            >READ MORE</a
+          >
+        </div>
+        <div class="culture_right bg-culture">
+          <img class="culture_right_img" src="" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="bg-black flex flex-col gap-y-200">
+      <div>
+        <div class="container flex justify-between">
+          <div class="footer_container_left w1-2 flex flex-col justify-between">
+            <div>
+              <img src="images/footer-logo.png" alt="images/footer-logo.png" />
+            </div>
+            <h2 class="font-sans font-bold text-36 text-white">
+              Let's go on vacation, Make your day
+            </h2>
+            <p class="text-14 font-sans text-white">Terms & Conditions</p>
+            <div class="logo text-20 text-white">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="footer_container_right flex flex-col gap-y-60 w1-2">
+            <div class="footer_container_right_top flex gap-x-18 item-center justify-end">
+              <p class="font-sans text-22 text-white">Ready to explore?</p>
+              <button class="footer_btn font-sans font-bold text-18  bg-primary">
+                Get started
+              </button>
+            </div>
+            <div class="footer_container_right_bottom flex justify-between">
+              <ul class="flex flex-col gap-y-10">
+                <p class="font-sans font-bold text-20 text-primary">Services</p>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white">
+                    Email Marketing</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white">
+                    Campaigns</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white"> Branding</a>
+                </li>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white"> Offline</a>
+                </li>
+              </ul>
+              <ul class="flex flex-col gap-y-10">
+                <p class="font-sans font-bold text-20 text-primary">About</p>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white">
+                    Our Story</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white"> Benefits</a>
+                </li>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white"> Term</a>
+                </li>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white"> Career</a>
+                </li>
+              </ul>
+              <ul class="flex flex-col gap-y-10">
+                <p class="font-sans font-bold text-20 text-primary">Help</p>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white"> FAQ'S</a>
+                </li>
+                <li>
+                  <a href="#" class="font-sans text-18 text-white">
+                    Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="font-sans font-semibold text-18 text-white text-center py-20">
+          Copyright 2023 QWERy
+        </p>
+      </div>
+    </footer>
+
+    <script>
+        function collapse(id, remove, add) {
+        event.preventDefault();
+        let element = document.getElementById(id);
+        if (element.classList.contains(remove)) {
+          element.classList.remove(remove);
+          element.classList.add(add);
+        } else {
+          element.classList.remove(add);
+          element.classList.add(remove);
+        }
+      }
+    </script>
+  </body>
+</html>
