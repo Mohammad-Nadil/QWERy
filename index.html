@@ -4,142 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css">
-    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- font awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
-    <section id="top" class="bg-head py-20">
-      <div class="container top_contain">
-        <nav class="flex justify-between item-center">
-          <div class="top_img">
-            <img src="images/logo.png" alt="images/logo.png" />
+    <section id="top" class="bg-head">
+      <div class="container">
+         <nav>
+          <div class="nav_contain flex justify-between">
+            <div class="logo">
+              <img src="images/logo.png" alt="images/logo.png" />
+            </div>
+            <ul id="nav_menu" class="nav_ul flex">
+              <li>
+                <a href="/index.html" class="nav_li nav_active font-semibold"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a href="#holiday" class="nav_li font-semibold">About us</a>
+              </li>
+              <li>
+                <a href="#bromo" class="nav_li font-semibold">Information</a>
+              </li>
+              <li>
+                <a href="#culture" class="nav_li font-semibold">Culture</a>
+              </li>
+              <li>
+                <a href="#footer" class="nav_li font-semibold">Contact Us</a>
+              </li>
+            </ul>
+            <button
+              class="small_device"
+              onclick="collapse('nav_menu', 'visible', 'invisible')"
+            >
+              <i class="fa-solid fa-bars small_device_icon"></i>
+            </button>
           </div>
-          <ul id="nav_menu" class=" nav_ul flex gap-x-60">
-            <li>
-              <a href="" class="text-18 text-black font-sans font-semibold"
-                >home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#holiday"
-                class="text-18 text-white hover-text-black font-sans font-semibold"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#bromo"
-                class="text-18 text-white hover-text-black font-sans font-semibold"
-                >Information</a
-              >
-            </li>
-            <li>
-              <a
-                href="#culture"
-                class="text-18 text-white hover-text-black font-sans font-semibold"
-                >Culture</a
-              >
-            </li>
-            <li>
-              <a
-                href="#footer"
-                class="text-18 text-white hover-text-black font-sans font-semibold"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <button class="small_device"  onclick="collapse('nav_menu', 'visible', 'invisible')">
-            <i class="fa-solid fa-bars small_device_icon"></i>
-          </button>
         </nav>
         <div class="banner">
-          <p class="banner_p font-sans font-bold text-18 text-primary ">
+          <p class="banner_p text-detail font-bold text-primary">
             explore the Nature Beauty
           </p>
           <div>
-            <h2 class=" banner_head font-sans font-bold text-96 text-white leading-100">
-              Discover
-            </h2>
-            <p class=" banner_head_p font-sans text-88 text-white leading-100">
-              Wonderful Indonesia
-            </p>
+            <h2 class="banner_head font-bold text-white">Discover</h2>
+            <p class="banner_head_p text-white">Wonderful Indonesia</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="holiday" class=" holiday py-145 bg-black">
-      <div class="container flex gap-x-45 autoShow">
+    <section id="holiday" class="padding-t">
+      <div class="container flex items-center autoShow">
         <div class="holiday_left bg-holiday">
           <img class="holiday_left_img" src="" alt="" />
         </div>
         <div class="holiday_right flex flex-col">
-          <p class=" holiday_title font-bold text-18 text-primary">EAST nUSA TENGGARA</p>
-          <h2 class=" holiday_heading font-sans font-bold text-64 text-white">
-            Have you enjoyed your holiday?
-          </h2>
-          <p class=" holiday_detail font-semibold font-sans text-white leading-32">
-            You will be amazed if you take part in this sailing Komodo island
-            tour package. So it is also mandatory for you, besides enjoying
-            Komodo tourism on Komodo Island, you also have to taste the marine
-            tourism. The beautiful waters of Komodo will make you meet many
-            travelers from other countries.
-          </p>
-          <a
-            href="#"
-            class=" holiday_a font-sans font-bold text-18 text-primary"
-            style="padding-top: 49px"
+          <div class="holiday_text flex flex-col">
+            <p class="holiday_title text-detail font-bold text-primary">
+              EAST nUSA TENGGARA
+            </p>
+            <h2 class="holiday_heading text-heading font-bold text-white">
+              Have you enjoyed your holiday?
+            </h2>
+            <p class="holiday_detail font-semibold text_detail text-white">
+              You will be amazed if you take part in this sailing Komodo island
+              tour package. So it is also mandatory for you, besides enjoying
+              Komodo tourism on Komodo Island, you also have to taste the marine
+              tourism. The beautiful waters of Komodo will make you meet many
+              travelers from other countries.
+            </p>
+          </div>
+          <a href="#" class="holiday_a font-bold text_detail text-primary"
             >READ MORE</a
           >
         </div>
       </div>
     </section>
-    <section id="bromo" class="bromo py-145 bg-black">
+    <section id="bromo" class="padding-t">
       <div class="container bg-bromo autoBlur">
         <div class="bromo_container_text">
-          <p class=" bromo_title font-sans font-bold text-18 text-primary">Bromo</p>
-          <h2 class="bromo_heading font-sans font-bold text-64 text-white">
+          <p
+            class="bromo_title text-detail font-bold text-primary bromo_text_animation"
+          >
+            Bromo
+          </p>
+          <h2
+            class="bromo_heading text-heading font-bold text-white bromo_text_animation"
+          >
             Steady your steps, we will climb together!
           </h2>
-          <p class=" bromo_detail font-sans text-14 leading-32 text-white">
+          <p
+            class="bromo_detail text-detail text-14 text-white bromo_text_animation"
+          >
             Enjoying the vast expanse of the sea of ​​​​sand, witnessing the
             splendor of Mount Semeru that soars into the sky, and gazing at the
             beauty of the sun moving out of its bed or otherwise enjoying the
             dim twilight from the Bromo ridge is an unforgettable experience
             when visiting Bromo.
           </p>
-          <a href="#" class=" bromo_a font-sans font-bold text-18 text-primary"
+          <a
+            href="#"
+            class="bromo_a font-sans font-bold text-18 text-primary bromo_text_animation"
             >READ MORE</a
           >
         </div>
       </div>
     </section>
-    <section id="culture" class="culture py-145 bg-black">
-      <div class="container autoShow flex gap-x-45 justify-between">
+    <section id="culture" class="culture padding-t">
+      <div class="container autoShow flex justify-between">
         <div class="culture_left flex flex-col">
-          <p class="font-bold text-18 text-primary">EAST nUSA TENGGARA</p>
-          <h2 class="font-sans font-bold text-64 text-white">
-            Have you enjoyed your holiday?
-          </h2>
-          <p class="culture_detail font-semibold font-sans text-white leading-32">
-            You will be amazed if you take part in this sailing Komodo island
-            tour package. So it is also mandatory for you, besides enjoying
-            Komodo tourism on Komodo Island, you also have to taste the marine
-            tourism. The beautiful waters of Komodo will make you meet many
-            travelers from other countries.
-          </p>
+          <div class="culture_text flex flex-col">
+            <p class="culture_title font-bold text-detail text-primary">
+              INDONESIAN CULTURE
+            </p>
+            <h2 class="culture_heading font-bold text-heading text-white">
+              Our culture here is very friendly to people
+            </h2>
+            <p class="culture_detail text-detail font-semibold text-white">
+              known for his politeness, manners and gentleness. This becomes a
+              characteristic when they mingle with other tribes and become basic
+              traits that are passed down by their ancestors.
+            </p>
+          </div>
           <a
             href="#"
-            class=" culture_a font-sans font-bold text-18 text-primary"
+            class="culture_a font-bold text-primary"
             style="padding-top: 49px"
             >READ MORE</a
           >
@@ -149,76 +152,68 @@
         </div>
       </div>
     </section>
-    <footer id="footer" class="bg-black flex flex-col gap-y-200">
+    <footer id="footer" class="flex flex-col padding-t">
       <div class="autoShow autoBlur">
         <div class="container flex justify-between">
-          <div class="footer_container_left w1-2 flex flex-col justify-between">
+          <div class="footer_container_left flex flex-col justify-between">
             <div>
               <img src="images/footer-logo.png" alt="images/footer-logo.png" />
             </div>
-            <h2 class="font-sans font-bold text-36 text-white">
+            <h2 class="font-bold text-white">
               Let's go on vacation, Make your day
             </h2>
-            <p class="text-14 font-sans text-white">Terms & Conditions</p>
-            <div class="logo text-20 text-white">
+            <p class="text-white text-detail">Terms & Conditions</p>
+            <div class="logo flex text-white">
               <i class="fa-brands fa-facebook-f"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-instagram"></i>
             </div>
           </div>
-          <div class="footer_container_right flex flex-col gap-y-60 w1-2">
-            <div class="footer_container_right_top flex gap-x-18 item-center justify-end">
-              <p class="font-sans text-22 text-white">Ready to explore?</p>
-              <button class="footer_btn font-sans font-bold text-18  bg-primary">
-                Get started
-              </button>
+          <div class="footer_container_right flex flex-col">
+            <div
+              class="footer_container_right_top flex item-center justify-end"
+            >
+              <p class="font-sans text-white">Ready to explore?</p>
+              <button class="footer_btn font-bold">Get started</button>
             </div>
             <div class="footer_container_right_bottom flex justify-between">
-              <ul class="flex flex-col gap-y-10">
-                <p class="font-sans font-bold text-20 text-primary">Services</p>
+              <ul class="flex flex-col">
+                <p class="font-bold text-primary">Services</p>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white">
-                    Email Marketing</a
-                  >
+                  <a href="#" class="text-white"> Email Marketing</a>
                 </li>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white">
-                    Campaigns</a
-                  >
+                  <a href="#" class="text-white"> Campaigns</a>
                 </li>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white"> Branding</a>
+                  <a href="#" class="text-white"> Branding</a>
                 </li>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white"> Offline</a>
+                  <a href="#" class="text-white"> Offline</a>
                 </li>
               </ul>
-              <ul class="flex flex-col gap-y-10">
-                <p class="font-sans font-bold text-20 text-primary">About</p>
+              <ul class="flex flex-col">
+                <p class="font-bold text-primary">About</p>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white">
-                    Our Story</a
-                  >
+                  <a href="#" class="text-white"> Our Story</a>
                 </li>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white"> Benefits</a>
+                  <a href="#" class="text-white"> Benefits</a>
                 </li>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white"> Term</a>
+                  <a href="#" class="text-white"> Term</a>
                 </li>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white"> Career</a>
+                  <a href="#" class="text-white"> Career</a>
                 </li>
               </ul>
-              <ul class="flex flex-col gap-y-10">
-                <p class="font-sans font-bold text-20 text-primary">Help</p>
+              <ul class="flex flex-col">
+                <p class="font-bold text-primary">Help</p>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white"> FAQ'S</a>
+                  <a href="#" class="text-white"> FAQ'S</a>
                 </li>
                 <li>
-                  <a href="#" class="font-sans text-18 text-white">
-                    Contact Us</a
-                  >
+                  <a href="#" class="text-white"> Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -226,24 +221,26 @@
         </div>
       </div>
       <div class="container">
-        <p class="font-sans font-semibold text-18 text-white text-center py-20">
+        <p class="Copyright_text font-semibold text-detail">
           Copyright 2023 QWERy
         </p>
       </div>
     </footer>
 
-    <script>
-        function collapse(id, remove, add) {
-        event.preventDefault();
-        let element = document.getElementById(id);
-        if (element.classList.contains(remove)) {
-          element.classList.remove(remove);
-          element.classList.add(add);
-        } else {
-          element.classList.remove(add);
-          element.classList.add(remove);
-        }
-      }
-    </script>
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
